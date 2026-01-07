@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVA Solutions | Web Development & AI Solutions</title>
+    <link rel="icon" href="./logo1.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">TECH<span>NOVA</span></a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#student-projects">Student Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transforming Ideas Into <span class="text-gradient">Digital Excellence</span></h1>
+            <p>We build cutting-edge websites, data science solutions, machine learning applications, and help students with final year projects at special discounts.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Start Your Project</a>
+                <a href="#student-projects" class="btn btn-secondary">Student Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites, e-commerce platforms, and web applications built with modern technologies for optimal performance and user experience.</p>
+                    <ul>
+                        <li>• Responsive Design</li>
+                        <li>• E-commerce Solutions</li>
+                        <li>• CMS Development</li>
+                        <li>• Web Applications</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Turn your data into actionable insights with advanced analytics, predictive modeling, and interactive data visualization.</p>
+                    <ul>
+                        <li>• Data Analytics</li>
+                        <li>• Predictive Modeling</li>
+                        <li>• Data Visualization</li>
+                        <li>• Business Intelligence</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Intelligent solutions powered by AI and machine learning algorithms that automate processes and uncover hidden patterns.</p>
+                    <ul>
+                        <li>• Custom ML Models</li>
+                        <li>• AI Integration</li>
+                        <li>• Natural Language Processing</li>
+                        <li>• Computer Vision</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="discount-badge">43% OFF</div>
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student Projects</h3>
+                    <p>Professional final year project assistance for computer science, IT, and engineering students with special discounted rates.</p>
+                    <ul>
+                        <li>• Complete Project Development</li>
+                        <li>• Documentation & Reports</li>
+                        <li>• Source Code & Deployment</li>
+                        <li>• Presentation Guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Projects Section -->
+    <section id="student-projects" class="student-projects">
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2>Final Year Projects for Students</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;">
+                Struggling with your final year project? Get professional assistance with complete solutions including source code, documentation, reports, and presentations at special student discounts!
+            </p>
+            
+            <div class="student-features">
+                <div class="student-feature">
+                    <div class="student-feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Complete Development</h3>
+                    <p>Full project development from idea to implementation with modern technologies</p>
+                </div>
+                
+                <!-- <div class="student-feature">
+                    <div class="student-feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documentation</h3>
+                    <p>Professional documentation, reports, and thesis writing assistance</p>
+                </div> -->
+                
+                <div class="student-feature">
+                    <div class="student-feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Presentation</h3>
+                    <p>PPT preparation and presentation practice sessions</p>
+                </div>
+                
+                <div class="student-feature">
+                    <div class="student-feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock support for queries and modifications</p>
+                </div>
+            </div>
+            
+            <div class="pricing-box">
+                <h3>Special Student Discount</h3>
+                <p style="margin-bottom: 20px;">We understand students' budget constraints and offer special discounted rates:</p>
+                
+                <div style="margin: 30px 0;">
+                    <p style="font-size: 1.1rem; margin-bottom: 10px;">
+                        <span class="original-price">Rs. 30,000</span>
+                        <span class="discounted-price">Rs. 17,000</span>
+                    </p>
+                    <p style="color: #10b981; font-weight: 600; font-size: 1.1rem;">
+                        Save 43% on your final year project!
+                    </p>
+                </div>
+                
+                <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h4 style="margin-bottom: 15px;">What's Included:</h4>
+                    <ul style="text-align: left; list-style: disc; padding-left: 20px; color: #475569;">
+                        <li>Complete source code with comments</li>
+                        <!-- <li>Project documentation (80+ pages)</li> -->
+                        <li>PPT presentation slides</li>
+                        <li>Project report in required format</li>
+                        <li>Deployment assistance</li>
+                        <li>3 months free support</li>
+                    </ul>
+                </div>
+                
+                <a href="#contact" class="btn" style="margin-top: 20px;">
+                    <i class="fas fa-graduation-cap"></i> Get Your Project Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="student">Student Projects</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-featured online store with inventory management, payment integration, and customer analytics.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="data">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>Sales Prediction System</h3>
+                        <p>Machine learning model that predicts future sales trends with 94% accuracy for retail businesses.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ml">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>Customer Support Chatbot</h3>
+                        <p>AI-powered chatbot that handles customer inquiries, reducing response time by 70%.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Dialogflow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="student">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>University Management System</h3>
+                        <p>Complete university management system developed for a final year CS student project.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="student">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>E-Learning Platform</h3>
+                        <p>Online learning platform with video courses, quizzes, and certificate generation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="student">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1555949963-ff59fe7658bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80');"></div>
+                    <div class="portfolio-info">
+                        <h3>AI-Based Healthcare System</h3>
+                        <p>Disease prediction system using machine learning algorithms for healthcare.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">ML Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Driving Innovation with Technology</h3>
+                    <p>TECHNOVA was founded by <strong>Amjad Hayat</strong> with a vision to bridge the gap between business needs and technological solutions. Our team of experienced developers, data scientists, and machine learning engineers work together to deliver exceptional results.</p>
+                    <p>We believe in building long-term partnerships with our clients, understanding their unique challenges, and creating tailored solutions that drive measurable growth.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">80+</div>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">35+</div>
+                            <p>Student Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn" style="margin-top: 30px;">Work With Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="TECHNOVA Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"TECHNOVA transformed our online presence with a stunning website that increased our conversions by 40%. Their team was professional, responsive, and delivered beyond our expectations."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">JS</div>
+                        <div>
+                            <h4>John Smith</h4>
+                            <p>CEO, InnovateTech Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item" style="display: none;">
+                    <p class="testimonial-text">"As a final year student, I was struggling with my project. TECHNOVA not only delivered an excellent AI-based system but also helped me understand it completely. Got an A+ grade!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">AR</div>
+                        <div>
+                            <h4>Ahmed Raza</h4>
+                            <p>Computer Science Student</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item" style="display: none;">
+                    <p class="testimonial-text">"The sales prediction model developed by TECHNOVA helped us increase our revenue by 25%. Their data science team is incredibly talented."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">SK</div>
+                        <div>
+                            <h4>Sarah Khan</h4>
+                            <p>Marketing Director, RetailChain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   <section id="contact">
+    <div class="container">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-container">
+
+            <!-- LEFT SIDE : CONTACT INFO -->
+            <div class="contact-info">
+                <h3>Let's Build Something Amazing Together</h3>
+
+                <p>
+                    Ready to transform your business with cutting-edge technology?
+                    Need help with your final year project?
+                    Contact us today for a free consultation.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>technova028@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(+92) 3140886107</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bahawalpur, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4>CEO</h4>
+                            <p>Amjad Hayat</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE : CONTACT FORM -->
+            <div class="contact-form">
+
+                <form action="https://formspree.io/f/xkogpydn" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control"
+                               placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                               placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control"
+                               placeholder="Your Phone Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-type">You are a *</label>
+                        <select id="user-type" name="user_type" class="form-control" required>
+                            <option value="">Select Type</option>
+                            <option value="student">Student</option>
+                            <option value="business">Business Owner</option>
+                            <option value="individual">Individual</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Select a Service</option>
+                            <option value="web">Web Development</option>
+                            <option value="data">Data Science</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="student-project">Student Project (43% OFF)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" class="form-control"
+                                  placeholder="Tell us about your project..." required></textarea>
+                    </div>
+
+                    <!-- Formspree Settings -->
+                    <input type="hidden" name="_subject" value="New Contact Message - TECHNOVA">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">TECH<span class="text-gradient">NOVA</span></div>
+                    <p>Transforming ideas into digital excellence through cutting-edge web development, data science, machine learning solutions, and student project assistance.</p>
+                    <p><strong>CEO:</strong> Amjad Hayat</p>
+                    <p><strong>Special:</strong> 43% OFF for Students</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#student-projects">Student Projects</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Data Science</a></li>
+                        <li><a href="#services">Machine Learning</a></li>
+                        <li><a href="#student-projects">Student Projects</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 TECHNOVA Solutions. All rights reserved. | CEO: Amjad Hayat </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
